@@ -83,6 +83,13 @@ const displayMovements = function(movements) {
 
 displayMovements(account1.movements)
 
+const calcDisplayBalance = function(movements) {
+  const balance = movements.reduce((accumulator, curr) => accumulator + curr, 0);
+  labelBalance.textContent = `${balance} EUR`
+};
+
+calcDisplayBalance(account1.movements);
+
 const createUsername = function(accts) {
   accts.forEach(function(acc) {
     acc.username = acc.owner.toLowerCase().split(' ').map(name => name[0]).join('');
@@ -133,3 +140,11 @@ console.log(depositsFor);
 
 const withdrawls = movements.filter(mov => mov < 0);
 console.log(withdrawls);
+
+const balance = movements.reduce((accumulator, curr) => accumulator + curr, 0);
+// console.log(`iteration ${i}: ${accumulator}`);
+console.log(balance);
+
+let balance2 = 0;
+for (const mov of movements) balance2 += mov;
+console.log(balance2);
