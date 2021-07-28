@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #444;
   background-color: #f3f3f3;
   height: 100vh;
@@ -155,11 +155,11 @@ nav {
 }
 
 .movements__type--deposit {
-  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-image: linear-gradient(to top left, #a9dd19, #445e2e);
 }
 
 .movements__type--withdrawal {
-  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  background-image: linear-gradient(to top left, #e5842a, #ac787b);
 }
 
 .movements__value {
@@ -214,15 +214,15 @@ nav {
 }
 
 .operation--transfer {
-  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  background-image: linear-gradient(to top left, #41546d, #b6bdc2);
 }
 
 .operation--loan {
-  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-image: linear-gradient(to top left, #4f6e62, #9a9c98);
 }
 
 .operation--close {
-  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  background-image: linear-gradient(to top left, #599a9c, #e3dde7);
 }
 
 h2 {
